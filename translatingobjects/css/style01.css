@@ -3,9 +3,7 @@
 }
 
 body{
-        background-color:red;
-
-/*    background-color: rgb(235, 235, 234);*/
+    background-color: rgb(235, 235, 234);
 /*    background-color: rgb(225, 224, 223);*/
 /*    height: 100px;*/
     overflow: hidden;
