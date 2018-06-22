@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <title>Translating Objects</title>
+    <link rel="stylesheet" type="text/css" href="../css/style02.css" media="screen"/>
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="../addons/p5.min.js"></script>
+    <script src="../addons/p5.dom.min.js"></script>
+    <script src="../addons/p5.sound.min.js"></script>
+      
+    
+      <script src="sketch-beta.js"></script>
+      
+  </head>
+  <body>
+    
+      
+    <div id="where-boks">
+    </div> 
+    
+    
+    <div id="about-boks">
+    </div>  
+      
+    
+    <div id="menu">
+        <button onclick="whereFunction()" class="knap">
+            <div id="where"></div>  
+        </button>  
+
+        <button onclick="aboutFunction()" class="knap">
+            <div id="about"></div>  
+        </button>
+    </div>
+      
+      <script>
+      
+        function whereFunction() {
+
+
+          var x = document.getElementById("where-boks");
+          // var y = document.getElementById("sliders");
+
+
+          if (x.style.display == 'inline-block'){
+            x.style.display = 'none';
+            // y.style.visibility = 'visible';
+          } else {
+            x.style.display = 'inline-block';
+            // y.style.visibility = 'none';
+            // document.getElementById("slider1").style.cssText = 'visibility:visible;';
+            }
+            
+            document.getElementById("about-boks").style.cssText = 'display:none;';
+        }
+          
+        function aboutFunction() {
+
+
+          var x = document.getElementById("about-boks");
+          // var y = document.getElementById("sliders");
+
+
+          if (x.style.display == 'inline-block'){
+            x.style.display = 'none';
+            // y.style.visibility = 'visible';
+          } else {
+            x.style.display = 'inline-block';
+            // y.style.visibility = 'none';
+            // document.getElementById("slider1").style.cssText = 'visibility:visible;';
+            }
+            
+            document.getElementById("where-boks").style.cssText = 'display:none;';
+
+        }
+      
+      </script>
+  </body>
+</html>

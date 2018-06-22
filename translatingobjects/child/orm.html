@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <title>Translating Objects</title>
+    <style> body {padding: 0; margin: 0;} </style>
+    <link rel="stylesheet" type="text/css" href="../css/style01.css">
+    <script src="../addons/p5.min.js"></script>
+    <script src="../addons/p5.dom.min.js"></script>
+    <script src="../addons/p5.sound.min.js"></script>
+    <script src="../sketch/sketch-orm.js"></script>
+  </head>
+  <body>
+      
+    <a href="../index.html">
+      <div class="pil">
+      </div>
+    </a>
+<!------------------ ABOUT ------------------>
+<div id="about-boks">
+</div> 
+      
+<button onclick="aboutFunction()" class="knap">
+            <div id="about"></div>  
+</button>
+      
+<script> 
+    
+function aboutFunction() {
+
+
+          var x = document.getElementById("about-boks");
+          // var y = document.getElementById("sliders");
+
+
+          if (x.style.display == 'inline-block'){
+            x.style.display = 'none';
+            // y.style.visibility = 'visible';
+          } else {
+            x.style.display = 'inline-block';
+            // y.style.visibility = 'none';
+            // document.getElementById("slider1").style.cssText = 'visibility:visible;';
+            }
+            
+//            document.getElementById("about-boks").style.cssText = 'display:none;';
+
+        }
+
+</script>
+    <script>  
+    var Timer = setTimeout("document.location.href='../index.html'", 10000);
+
+     function ResetTimeout()
+     {
+        if(Timer)
+        {
+          clearTimeout(Timer);
+          Timer = setTimeout("document.location.href='../index.html'", 10000);
+        }
+        else
+          Timer = setTimeout("document.location.href='../index.html'", 10000);
+     }
+
+     if(navigator.userAgent.indexOf('MSIE')>-1)
+        document.onmousemove = ResetTimeout;
+     else
+        window.onmousemove = ResetTimeout;
+     window.onclick = ResetTimeout;
+     </script> 
+      
+  </body>
+</html>

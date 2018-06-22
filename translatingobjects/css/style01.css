@@ -1,0 +1,175 @@
+*{
+    cursor: pointer;
+}
+
+body{
+    background-color: rgb(235, 235, 234);
+/*    background-color: rgb(225, 224, 223);*/
+/*    height: 100px;*/
+    overflow: hidden;
+}
+
+.logo{
+  background-image: url("../img/logo_lille_uden01.png");
+  width: 60%;
+  height: 40%;
+  z-index: 1000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+    background-size: cover;
+}
+
+.object:hover ~ .logo {
+background-image: url("../img/logo_lille_med01.png");
+}
+
+img{
+  /* display: inline-block; */
+  position: absolute;
+  height: auto;
+}
+
+#bue{
+/*  width: 260px;*/
+    width: 20%;
+}
+
+#bue:hover{
+/*  width: 250px;*/
+    width: 22%;
+}
+
+#halvkugle{
+/*  width: 221px;*/
+    width: 18%;
+}
+
+#halvkugle:hover{
+/*  width: 210px;*/
+    width: 20%;
+}
+
+
+#musling{
+/*  width: 208px;*/
+    width:15%;
+}
+
+#musling:hover{
+  transform: rotate(-10deg);
+}
+
+#orm{
+/*  width: 410px;*/
+    width: 32%;
+}
+
+#orm:hover{
+/*  width: 420px;*/
+    width: 30%;
+}
+
+
+#sno{
+/*  width: 625px;*/
+    width: 42%;
+}
+
+#sno:hover{
+  transform: rotate(10deg);
+}
+
+#sten{
+/*  width: 154px;*/
+    width: 15%;
+}
+
+#sten:hover{
+/*  width: 144px;*/
+    width: 14%;
+}
+
+#twist{
+/*  width: 145px;*/
+    width: 12%;
+}
+
+#twist:hover{
+/*  width: 155px;*/
+    width: 13%;
+}
+
+#wall{
+/*  width: 438px;*/
+    width: 30%;
+}
+
+#wall:hover{
+  transform: rotate(-10deg);
+}
+
+
+#about{
+    height: 50px;
+    width: 200px;
+    background-image: url("about.png");
+    background-size: cover;
+    cursor: pointer;
+    z-index: 100000;
+}
+
+.knap{
+    bottom: 20px;
+    right: 3px;
+    position: fixed;
+    border: none;
+    text-decoration: none;
+    cursor: pointer; 
+    background-color: transparent;
+    display: block;
+    height: 50px;
+    width: 200px;
+    z-index: 100000;
+/*    border: 1px solid red;*/
+}
+
+#about-boks{
+    background-image: url("../img/popup-about.png");
+    background-size: cover;
+    width: 65%;
+    height: 90%;
+    z-index: 1000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);  
+    display: none;
+    z-index: 100000;
+}
+
+/*tilbage pil*/
+.pil{
+    background-image: url("../img/back-sort02.png");
+    width: 200px;
+    height: 50px;
+    top: 20px;
+    left: 15px;
+    position: fixed;
+    -webkit-transform: translate(-2%, -2%);
+    transform: translate(-2%, -2%);
+    background-size: cover;
+    
+    
+}
+
+/*
+.pil:hover{
+    background-image: url("../img/back_med01.png");
+}
+*/
+
