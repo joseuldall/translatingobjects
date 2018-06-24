@@ -39,23 +39,29 @@
 }
 
 #about-boks{
-    width: 500px;
-    height: 300px;
+    width: 35%;
+    height: 35%;
     position: fixed;
     bottom: 30px;
     right: 30px;
     background-image: url("about-tekst.png");
     background-size: cover;
     display: none;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #where-boks{
-    width: 300px;
-    height: 750px;
+    width: 25%;
+    height: 90%;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    right: 0%;
+    top: 5%;
     background-image: url("where-tekst.png");
     background-size: cover;
     display: none;
+    background-size: auto 100% ;
+    background-repeat: no-repeat;
+    background-position: center;
 }

@@ -20,7 +20,7 @@ body{
 .logo{
   background-image: url("../img/logo_lille_uden01.png");
   width: 60%;
-  height: 40%;
+  height: 100%;
   z-index: 1000;
   position: fixed;
   top: 50%;
@@ -28,7 +28,9 @@ body{
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   pointer-events: none;
-    background-size: cover;
+background-size: 100% auto;
+background-repeat: no-repeat;
+background-position: center;
 }
 
 .object:hover ~ .logo {
@@ -149,7 +151,7 @@ img{
     background-image: url("../img/popup-about.png");
     background-size: cover;
     width: 65%;
-    height: 90%;
+    height: 100%;
     z-index: 1000;
     position: fixed;
     top: 50%;
@@ -158,6 +160,9 @@ img{
     transform: translate(-50%, -50%);  
     display: none;
     z-index: 100000;
+    background-size: 100% auto;
+background-repeat: no-repeat;
+background-position: center;
 }
 
 /*tilbage pil*/
